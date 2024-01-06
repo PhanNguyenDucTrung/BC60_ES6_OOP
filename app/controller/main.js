@@ -46,9 +46,13 @@ listPerson.addPerson(student1);
 listPerson.addPerson(employee1);
 listPerson.addPerson(customer1);
 
-getEle('addButton').addEventListener('click', () => {});
+getEle('addButton').addEventListener('click', () => {
+    handleAddUser();
+});
 
-function handleAddUser() {}
+function handleAddUser() {
+    const role = document.getElementById('role').value;
+}
 
 function displayUsers() {
     const tableBody = document.querySelector('#userTable tbody');
